@@ -1,0 +1,69 @@
+.newsletter-container {
+  padding: 10px;
+}
+.newsletter-content {
+  /* padding: 0 2%; */
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 40vh;
+  background-color: #6555df;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.newsletter-right h3 {
+  text-transform: none;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.newsletter-left img {
+  height: 200px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+}
+
+.newsletter-input-btn {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+
+  /* background-color: red; */
+}
+.newsletter-input-btn input {
+  background-image: url(../../img/mail.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  padding-right: 20px;
+  padding-left: 40px;
+}
+
+.newsletter-input-btn button {
+  position: absolute;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px 6px 6px 0px;
+  right: 0;
+  background-color: var(--color-2);
+  color: #fff;
+  font-family: inherit;
+  transition: 1s ease-in;
+}
+.newsletter-btn:hover {
+  background-color: var(--color-1);
+  color: var(--color-2);
+}
+
+@media (max-width: 760px) {
+  .newsletter-content {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

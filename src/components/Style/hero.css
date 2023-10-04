@@ -1,0 +1,160 @@
+.heroSection {
+  padding: 10px;
+}
+
+.heroWrapper {
+  /* width: 100vw; */
+
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  background-color: #6555df;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: var(--color-2);
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+  /* margin-right: 10px; */
+  user-select: none;
+  transition: all 0.4s;
+}
+.arrow:hover {
+  background-color: var(--color-1);
+}
+.sliderButtons {
+  display: flex;
+  z-index: 10;
+}
+.prevArrow {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  transform: translateY(50%);
+}
+.nextArrow {
+  position: absolute;
+  bottom: 50%;
+  right: 10px;
+  transform: translateY(50%);
+}
+
+.heroSlide {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.heroImage {
+  max-height: 100%;
+  width: auto;
+}
+.heroImage img {
+  position: absolute;
+  top: 1px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+}
+
+.heroSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+
+  padding: 0 10%;
+}
+
+/* .heroSlider::before {
+  content: "  ";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  bottom: 0vh;
+  left: 0;
+  overflow: hidden;
+  
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.596) 37%,
+    rgba(67, 49, 141, 0.137) 100%
+  );
+} */
+.heroContent {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  min-width: 600px;
+  color: #fff;
+  padding: 0 5%;
+  transition: 3000 ease;
+}
+
+.heroContent h1 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 0, 0, 0, 20px rgba(0, 0, 0, 0.4);
+  margin: 0 0 18px;
+}
+
+.heroContent p {
+  margin: 0 0 18px;
+  font-size: 1.5rem;
+}
+
+/* Set width of the slider button */
+.btn-hero {
+  width: 25%;
+  text-decoration: none;
+}
+.btn-hero:hover {
+  filter: drop-shadow(0 8px 24px rgba(33, 38, 46, 0.25));
+}
+
+/* Media Queries */
+@media (max-width: 760px) {
+  .heroContent {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+  .btn-hero {
+    background-color: var(--color-1);
+  }
+
+  .heroSlider {
+    padding: 0;
+  }
+
+  .heroImage::after {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      10deg,
+      rgb(2, 0, 36) 0%,
+      rgba(51, 0, 255, 0.137) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Slider End */

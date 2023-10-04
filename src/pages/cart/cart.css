@@ -1,0 +1,53 @@
+.cart-container {
+  position: relative;
+  min-height: 90vh;
+}
+.header {
+  background-color: rgb(54, 85, 187);
+  min-height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.cart-empty-header {
+  text-align: center;
+  height: 100%;
+}
+
+.cart-list {
+  padding: 20px 10%;
+}
+
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.icon-btn h3 {
+  padding-left: 10px;
+}
+
+.cart-total-pay {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+  background-color: var(--color-1);
+  color: #fff;
+}
+.subtotal {
+  color: var(--color-2);
+}
+
+@media (max-width: 760px) {
+  .cart-list {
+    padding: 20px 1%;
+  }
+  .pay-now {
+    margin-bottom: 40px;
+  }
+}

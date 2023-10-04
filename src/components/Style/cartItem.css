@@ -1,0 +1,56 @@
+/* Cart Item CSS Start */
+.cart-item {
+  display: flex;
+  margin: 30px 0;
+  /* background-color: brown; */
+}
+.item-image img {
+  height: 200px;
+  border-radius: 6px;
+}
+
+.top-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.bottom-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  align-items: center;
+}
+.item-details {
+  width: 100%;
+}
+.plus-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-minus p {
+  padding: 10px;
+}
+
+.delete-icon {
+  color: rgb(196, 65, 65);
+  cursor: pointer;
+}
+
+.lock-icon {
+  width: 20px;
+}
+
+@media (max-width: 760px) {
+  .cart-item {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Cart Item CSS End */

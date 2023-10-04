@@ -1,0 +1,68 @@
+/* basic Styles */
+
+.skeleton {
+  background: #ddd;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.skeleton.product {
+  height: 350px;
+  width: 250px;
+}
+
+.skeleton.header-box {
+  height: 20vh;
+  width: 100%;
+}
+
+.skeleton.title {
+  height: 10px;
+  width: 30px;
+}
+/*  Skeleton product*/
+.skeleton-product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skeleton-product {
+  padding: 10px;
+  position: relative;
+}
+
+/* skeleton-categories */
+.skeleton-categories {
+  padding: 10px;
+  position: relative;
+}
+/* Shimmer animation */
+.shimmer-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: loading 2s infinite;
+  overflow: hidden;
+}
+
+.shimmer {
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
